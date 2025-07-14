@@ -1,40 +1,81 @@
-# Mall_Customer_Segmentation
+# ➤ Mall Customer Segmentation using K-Means Clustering
 
- #> Mall Customer Segmentation using K-Means Clustering
-Welcome to my project on Customer Segmentation using data from a shopping mall! This notebook walks through how we can use unsupervised machine learning techniques to better understand customer behavior and divide them into meaningful segments.
+Welcome to my project on **Customer Segmentation**!  
+In this notebook, I applied unsupervised machine learning techniques to identify different types of customers based on their shopping behavior — a key step for businesses to offer personalized experiences.
 
-#>  About the Project
-Businesses today rely heavily on data-driven insights to improve customer experience and increase revenue. This project aims to group mall customers into distinct clusters based on key features like:
+---
 
-Age
+## ➤ Project Overview
 
-Annual Income
+Customer segmentation is crucial in today's competitive market. By analyzing customer data from a mall, I segmented customers into meaningful groups using the **K-Means Clustering** algorithm. This helps businesses:
 
-Spending Score
+- Target the right audience with the right offers
+- Personalize communication
+- Optimize product placement and promotions
 
-These clusters help businesses make smarter decisions when it comes to marketing, product placement, and personalized offers.
+---
 
-#> Techniques Used
-Data Exploration: We start with visual exploration of patterns using plots like scatterplots and distribution charts.
+## ➤ Features Used
 
-Data Preprocessing: Clean and prep the data for clustering.
+- 👤 Age  
+- 💰 Annual Income  
+- 📈 Spending Score (1–100)
 
-Elbow Method: Used to determine the optimal number of clusters.
+These features provide deep insights into spending patterns and lifestyle behaviors of shoppers.
 
-K-Means Clustering: The core ML algorithm used for grouping customers.
+---
 
-Visualization of Clusters: Final clusters are visualized in 2D and 3D space to understand the patterns and segments clearly.
+## ➤ Techniques and Workflow
 
-#> Key Findings
-Customers naturally fall into a few different types—some are high spenders with low income, others are low spenders with high income, and a group that spends moderately.
+1. **Data Preprocessing**  
+   - Cleaned the data  
+   - Checked for missing values  
+2. **Exploratory Data Analysis (EDA)**  
+   - Distribution and scatter plots for understanding data trends  
+3. **Elbow Method**  
+   - Determined the optimal number of clusters (`k`)  
+4. **K-Means Clustering**  
+   - Applied clustering to segment customers  
+5. **Visualization**  
+   - 2D and 3D plots to visualize the segmented clusters  
 
-Age and income often play a big role in spending behavior, but not always in expected ways.
+---
 
-#> Visual Output
-Here’s a sneak peek of what you’ll see:
+## ➤ Key Insights
 
-Clustered scatterplots
+- Some customers with high income spend less — indicating potential for targeted campaigns.
+- Younger customers often fall into higher spending categories.
+- Well-defined clusters highlight unique customer groups based on behavior and income.
 
-Spending score distributions
+---
 
-3D visualizations of clusters based on income, age, and spending
+## ➤ Dataset Information
+
+- 📄 **Mall Customer Dataset**  
+- 📊 200 records of customers  
+- 🧾 Columns: Customer ID, Gender, Age, Annual Income, Spending Score  
+
+> This is a popular dataset for clustering tasks and is widely used for learning purposes.
+
+---
+
+## ➤ Visual Output Examples
+
+- Scatter plots showing income vs spending
+- Clustered data in 2D and 3D space
+- Elbow graph showing optimal number of clusters
+
+---
+
+## ➤ Tech Stack
+
+- Python  
+- Jupyter Notebook  
+
+**Libraries Used**:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+
